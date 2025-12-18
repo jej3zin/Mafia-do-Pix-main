@@ -1,0 +1,139 @@
+/* ========= Home page ========= */
+.main-homepage {
+  padding-top: var(--height-header);
+  margin: 0 7rem;
+}
+.main-banner {
+  width: 100%;
+  margin-bottom: var(--gap-04);
+  display: flex;
+  align-items: center;
+  position: relative;
+  border-radius: var(--radius-02);
+  box-shadow: var(--shadow-banner);
+
+  & h1 {
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  & img {
+    height: 200px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-attachment: local;
+    background-size: cover;
+    border-radius: var(--radius-02);
+  }
+  & .subtitle {
+    align-items: center;
+    position: absolute;
+    bottom: 3.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+/* nav Main */
+.main-sublinks {
+  margin-bottom: var(--gap-02);
+  display: flex;
+  align-items: center;
+  border-bottom: var(--border-01);
+}
+.sublink {
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid transparent;
+  transition: var(--anima-03);
+  &:hover {
+    color: var(--brand-01);
+    border-bottom: var(--border-02);
+  }
+}
+.sublink.active {
+  color: var(--brand-01);
+  border-bottom: var(--border-02);
+}
+/* ========== Timelines & Cards ========== */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-04);
+  /* border: 1px solid red; */
+}
+.wrap-card {
+  padding: 1rem;
+  color: var(--text-01);
+  border: var(--border-01);
+  border-radius: var(--radius-02);
+  box-shadow: var(--shadow-02);
+  background: var(--bg-03);
+}
+/* Header - Avatar, Username */
+.wrap-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrap-infos {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-03);
+  & img {
+    height: 3rem;
+    width: 3rem;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid var(--brand-01);
+  }
+
+  & .username {
+    font-size: 1.05rem;
+    font-weight: 500;
+    color: var(--text-01);
+  }
+}
+.wrap-times {
+  color: var(--text-02);
+}
+/* Main - Content */
+.wrap-main {
+  margin: 0.5rem 0;
+}
+
+/* Footer -  */
+.wrap-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* Left */
+.footer-left {
+  display: flex;
+  gap: var(--gap-03);
+}
+.wrap-actions {
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-02);
+  & ion-icon {
+    font-size: 1.2rem;
+    color: var(--text-01);
+  }
+  & span {
+    color: var(--text-01);
+  }
+  &:hover {
+    color: var(--brand-01);
+  }
+}
+/* Right */
+.footer-right {
+  display: flex;
+  & button {
+    display: flex;
+    align-items: center;
+  }
+}

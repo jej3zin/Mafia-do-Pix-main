@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+/* ============ Default Theme ============ */
+:root {
+  /* ============ Height & Windth ============ */
+  --height-header: 9vh;
+
+  /* ============ Font & Typography ============ */
+  --font-default: 'Poppins', Arial, Helvetica, sans-serif;
+  --font-size-00: 1rem;
+
+  /* ============ Backgrounds ============ */
+  --bg-01: #222;
+  --bg-02: rgba(34, 34, 34, 0.75);
+  --bg-03: #191919;
+  --bg-04: #fff;
+  --bg-05: #fff;
+
+  /* ============ Title & Text ============ */
+  --text-01: #eee;
+  --text-02: #d1d1d1;
+  --text-03: #000;
+  --text-04: #000;
+  --text-05: #000;
+  /* ============ Primary Color ============ */
+  --brand-01: #ffb400;
+  --brand-02: #cb8e00;
+  --brand-03: #ffb30083;
+  --brand-04: #ffb30051;
+  --brand-05: rgba(255, 179, 0, 0.07);
+
+  /* ============ Spacing & Gaps ============ */
+  --gap-01: 0.25rem;
+  --gap-02: 0.5rem;
+  --gap-03: 0.75rem;
+  --gap-04: 1rem;
+
+  --: ;
+  --: ;
+  --: ;
+  --: ;
+  /* ============ Utility ============ */
+  --danger-01: #ff0000;
+  --danger-01: #d40000;
+
+  --success-01: rgb(0, 255, 0);
+  --success-01: rgb(0, 187, 0);
+
+  /* ============ Borders ============ */
+  --border-01: 1px solid rgb(55, 55, 55);
+  --border-01-2: 1px solid rgb(95, 95, 95);
+  --border-02: 1px solid #ffb400;
+  --border-04: 1px solid yellow;
+
+  /* ============ Border-Radius ============ */
+  --radius-01: 0.25rem;
+  --radius-02: 0.5rem;
+  --radius-03: 0.75rem;
+  --radius-04: 1rem;
+
+  /* ============ Shadows ============ */
+  --shadow-01: 0 4px 10px rgba(0, 0, 0, 0.75);
+  --shadow-02: 0 6px 10px rgba(70, 70, 70, 0.2);
+  --shadow-03: 0 0px 10px rgba(0, 0, 0, 1);
+
+  /* ============ Shadows Custom ============ */
+  --shadow-banner: 0 4px 0px rgba(255, 179, 0, 0.8);
+  --shadow-btns: 0 0px 10px rgba(255, 179, 0, 0.8);
+
+  /* ============ Blur ============ */
+  --blur-1: blur(2px);
+  --blur-2: blur(4px);
+  --blur-3: blur(8px);
+  --blur-4: blur(12px);
+
+  /* ============ Transitions ============ */
+  --anima-01: 0.1s ease;
+  --anima-02: 0.2s ease;
+  --anima-03: 0.3s ease;
+
+  /* ============  ============ */
+  /* ============  ============ */
+  /* ============  ============ */
+  /* ============  ============ */
+  /* ============  ============ */
+  /* ============  ============ */
+  /* ============  ============ */
+  /* ============  ============ */
+}

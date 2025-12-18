@@ -1,0 +1,174 @@
+.Homepage {
+  width: 50%;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+.DonateBase {
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 1.25rem;
+  padding: 0.75rem;
+  border-radius: 0.25rem;
+  border: 1px solid var(--brand-01);
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  white-space: normal;
+  overflow-x: auto;
+}
+.nickname {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  flex-wrap: nowrap;
+
+  & a {
+    color: var(--brand-01);
+  }
+  & img {
+    height: 2.75rem;
+    width: 2.75rem;
+    min-width: 2.75rem;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+}
+.Messagem {
+  overflow-wrap: break-word;
+  word-break: break-word;
+  hyphens: auto;
+
+  & a {
+    color: var(--brand-01);
+  }
+}
+.Messagem,
+.Messagem p,
+.Messagem span {
+  overflow-wrap: anywhere;
+  word-break: break-all;
+  hyphens: auto;
+  white-space: normal;
+}
+.line {
+  width: 100%;
+  margin: 0.25rem 0 0.5rem;
+  padding: 0.01rem;
+  display: flex;
+  background: var(--border-01);
+}
+.valor {
+  color: var(--brand-01);
+}
+video,
+img {
+  height: auto;
+  width: 100%;
+  display: block;
+}
+/* page Alfabeto & textos */
+.alfabetoSpam {
+  width: 50%;
+  margin: auto;
+}
+/* SpaceBox */
+.BoxDonate {
+  margin-bottom: 1rem;
+  padding: 0.75rem;
+  border-radius: 1.25rem;
+  background: var(--bg-03);
+}
+
+.Nick {
+  margin-bottom: 0.5rem;
+  color: var(--brand-01);
+}
+
+/* footer */
+.foot {
+  padding: 0.75rem 0.25rem;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+.github {
+  font-size: 1.5rem;
+  color: var(--text-01);
+}
+/* Modal */
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(4px);
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+.modal-content {
+  width: 80vw;
+  max-width: 350px;
+  max-height: 90%;
+  border-radius: 0.5rem;
+  animation: pop 0.25s ease-out;
+}
+
+.modal.show {
+  display: flex;
+}
+.openModalImg {
+  cursor: pointer;
+}
+/* RESPOSIVIDADE */
+@media (max-width: 1024px) {
+  .bg {
+    height: 100%;
+    width: 75%;
+    &::after {
+      width: 75%;
+    }
+  }
+  .Homepage {
+    width: 75%;
+    padding: 0 1.25rem;
+  }
+}
+@media (max-width: 768px) {
+  .bg {
+    height: 100%;
+    width: 100%;
+    &::after {
+      width: 100%;
+    }
+  }
+  .Homepage {
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+  .DonateBase {
+    padding: 0.6rem;
+    overflow: scroll;
+  }
+  .nickname {
+    font-size: 1rem;
+  }
+  .Messagem {
+    font-size: 0.9rem;
+  }
+  .boxlinks {
+    & ul {
+      /* flex-direction: column; */
+      gap: 1.25rem;
+    }
+  }
+}

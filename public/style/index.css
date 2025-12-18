@@ -1,0 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', Arial, Helvetica, sans-serif;
+}
+:root {
+  --col-01: #222;
+  --col-02: #d4d4d4;
+  --col-03: #ffa200;
+  --col-04: #333;
+  --col-05: #b3b3b3;
+}
+body {
+  color: var(--col-02);
+  background: var(--col-01);
+}
+.preloader {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  inset: 0;
+  z-index: 9999;
+  opacity: 1;
+  transition: opacity 0.5s ease;
+  background: var(--bg-01);
+}
+.preloader.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+.loader {
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--col-03);
+  border-bottom-color: transparent;
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  animation: rotation 1s linear infinite;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

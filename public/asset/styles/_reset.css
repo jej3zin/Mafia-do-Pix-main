@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--font-default);
+}
+html {
+  -webkit-font-smoothing: antialiased;
+}
+body {
+  color: var(--text-01);
+  background: var(--bg-01);
+  transition: var(--anima-03);
+}
+button {
+  border: none;
+  cursor: pointer;
+  background: none;
+}
+ul,
+ol {
+  list-style: none;
+}
+/* Scrollbar (lightweight) */
+:root::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+:root::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background: linear-gradient(180deg, var(--brand-01), var(--brand-02));
+}
+
+/* Selection */
+::selection {
+  color: var(--brand-01);
+  background: var(--bg-01);
+}

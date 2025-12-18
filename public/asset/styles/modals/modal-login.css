@@ -1,0 +1,135 @@
+.login-Modal {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  inset: 0;
+  z-index: 99;
+  backdrop-filter: var(--blur-2);
+  background: var(--bg-02);
+  transition: var(--anima-03);
+}
+.login-modal-overlay {
+  padding: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-03);
+  border-radius: var(--radius-01);
+  border: var(--border-01);
+  background: var(--bg-02);
+  box-shadow: var(--shadow-01);
+}
+.btn-close {
+  color: var(--text-01);
+  display: flex;
+  position: absolute;
+  top: 3rem;
+  right: 3rem;
+  & ion-icon {
+    font-size: 2rem;
+  }
+  &:hover {
+    color: var(--brand-01);
+  }
+}
+.login-bg {
+  height: 20rem;
+  width: 15rem;
+  & img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: var(--radius-03);
+  }
+}
+.login-modal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#modalTitle {
+  margin: 1rem;
+  font-size: 1.25rem;
+}
+.box-Input {
+  width: 15rem;
+  margin-bottom: 0.75rem;
+  display: flex;
+  background: var(--bg-02);
+}
+.box-Input input {
+  width: 100%;
+  padding: 0.5rem 0.75rem;
+  color: var(--text-01);
+  border: var(--border-01);
+  border-radius: var(--radius-02);
+  background: var(--bg-02);
+}
+.box-Input input:focus {
+  background: var(--brand-05);
+  border: 1px solid var(--brand-01);
+  outline: none;
+}
+.btn-primary {
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0.25rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: var(--text-01);
+  background: transparent;
+  border: 1px solid var(--brand-01);
+  border-radius: var(--radius-02);
+  transition: var(--anima-03);
+}
+.btn-primary:hover {
+  color: var(--bg-02);
+  background: var(--brand-01);
+  box-shadow: var(--shadow-btns);
+}
+.switch {
+  margin-top: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-02);
+}
+#switchText {
+  font-size: 0.8rem;
+}
+#switchMode {
+  font-size: 0.8rem;
+  color: var(--brand-01);
+}
+
+.login-Modal.error .login-modal-overlay {
+  animation: shake 0.4s;
+}
+.login-Modal.error input {
+  border-color: #ff4d4f;
+  background: rgba(255, 77, 79, 0.08);
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+  15% {
+    transform: translateX(-6px);
+  }
+  30% {
+    transform: translateX(6px);
+  }
+  45% {
+    transform: translateX(-6px);
+  }
+  60% {
+    transform: translateX(6px);
+  }
+  75% {
+    transform: translateX(-4px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

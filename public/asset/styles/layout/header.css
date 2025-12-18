@@ -1,0 +1,122 @@
+.head {
+  height: var(--height-header);
+  width: 100%;
+  padding: 0 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  z-index: 12;
+  backdrop-filter: var(--blur-2);
+  background: var(--bg-02);
+  border-bottom: var(--border-01);
+  box-shadow: var(--shadow-01);
+}
+/* Left */
+.box-left {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-04);
+  /* border: 1px solid red; */
+}
+.head-logotipo {
+  & img {
+    width: 2.5rem;
+  }
+}
+.head-nav {
+  /* border: 1px solid red; */
+}
+.head-a {
+  font-weight: 600;
+}
+.head-a.active {
+  color: var(--brand-01);
+}
+/* Right */
+.box-right {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-04);
+  /* border: 1px solid red; */
+}
+/* Search */
+.search-wrapper {
+  height: 2.5rem;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-02);
+  overflow: hidden;
+  border-radius: var(--radius-02);
+  border: 1px solid var(--brand-01);
+  transition: width 0.25s ease;
+}
+.search-wrapper.open {
+  width: 256px;
+}
+.search-wrapper ion-icon {
+  font-size: 1.25rem;
+  cursor: pointer;
+}
+.search-wrapper input {
+  flex: 1;
+  height: 2.5rem;
+  font-size: 1rem;
+  border: none;
+  outline: none;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.search-wrapper.open input {
+  opacity: 1;
+}
+
+.avatar-button {
+  display: flex;
+  align-items: center;
+  gap: var(--gap-03);
+  position: relative;
+  border-radius: var(--radius-01);
+  & img {
+    width: 2.5rem;
+    border-radius: var(--radius-01);
+  }
+}
+.username {
+  color: var(--text-01);
+}
+/* Dropdown */
+.dropdown {
+  min-width: 120px;
+  margin-top: 8px;
+  display: none;
+  position: absolute;
+  top: 9vh;
+  right: 7rem;
+  z-index: 100;
+  background: var(--bg-02);
+  border-radius: var(--radius-02);
+  border: var(--border-01);
+  box-shadow: var(--shadow-01);
+  transition: var(--anima-03);
+}
+.dropdown.openDrop {
+  display: flex;
+}
+.dropdown-item {
+  width: 100%;
+  padding: 8px 12px;
+  color: var(--text-01);
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: var(--gap-03);
+}
+
+.dropdown-item:hover {
+  color: var(--brand-01);
+  background: var(--brand-05);
+  border-radius: var(--radius-02);
+}
