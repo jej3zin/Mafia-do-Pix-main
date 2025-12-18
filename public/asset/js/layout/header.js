@@ -1,7 +1,7 @@
 // layout/header.js
 import { fetchUsername } from '../api/user.js';
 /* Altera DOM with Database */
-const token = localStorage.getItem('token'); // ou de onde você salva
+const token = localStorage.getItem('access_token'); // ou de onde você salva
 fetchUsername(token).then((username) => {
   if (username)
     document.getElementById('username').textContent = '@' + username;
@@ -33,11 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
     localStorage.removeItem('token');
     window.location.href = '/login';
   });
-
-  // fetch username
-  /* const token = localStorage.getItem('token');
-  fetchUsername(token).then((username) => {
-    if (username)
-      document.getElementById('username').textContent = '@' + username;
-  }); */
 });
