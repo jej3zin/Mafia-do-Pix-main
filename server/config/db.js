@@ -15,7 +15,7 @@ export const pool = new Pool({
   connectionTimeoutMillis: 5000,
   connectionString:
     process.env.DATABSE_URL ||
-    'https://dashboard.render.com/d/dpg-d5202e3e5dus73aj8tu0-a',
+    'postgresql://server_ox4h_user:MdNVRF2MobaqRIpwpx3biGYuytmRX9pf@dpg-d5202e3e5dus73aj8tu0-a/server_ox4h',
 });
 
 pool.on('connect', () => {
