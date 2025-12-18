@@ -13,6 +13,9 @@ export const pool = new Pool({
   max: 10,
   idleTimeoutMillis: 30000,
   connectionTimeoutMillis: 5000,
+  connectionString:
+    process.env.DATABSE_URL ||
+    'https://dashboard.render.com/d/dpg-d5202e3e5dus73aj8tu0-a',
 });
 
 pool.on('connect', () => {
